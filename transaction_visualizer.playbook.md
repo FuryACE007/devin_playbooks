@@ -11,6 +11,7 @@ The task is to create a simple web app using React, which can connect to MetaMas
 3. Create a Button to Connect to MetaMask
    - In App.js, create a button that will trigger the MetaMask connection when clicked.
    - set up a state to hold the connected account's address.
+   - Mock connection to MetaMask for testing if the app can connect to metamask and test if the app is working.
 4. Fetch Transactions Using Etherscan API
    - Ask the user for the Etherscan API key ( store it safely )
    - Using the etherscan api, fetch all the transactions from the wallet address using axios ( `GET` request )
@@ -19,8 +20,7 @@ The task is to create a simple web app using React, which can connect to MetaMas
    - For pagination, you use `react-paginate` library
    - The table contains 4 columns : transactionAddres, from, to, timeStamp
    - One page should contain only 8 transactions
-6. Mock connection to MetaMask for testing if the app is working
-7. Deploy to GitHub:
+6. Deploy to GitHub:
    - ask the user for an https link for the repo to push the code to
    - while making any changes to the code, create a separate branch for the changes and generate PR
    - follow the best branch naming practices for the github branches
