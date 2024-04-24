@@ -40,3 +40,5 @@ The task is to create a simple web app using React, which can connect to MetaMas
 - If the etherscan api doesn't work properly, use this API endpoint: - Etherscan API: `https://api.etherscan.io/api?module=account&action=txlist&address=${account}&startblock=0&endblock=99999999&sort=asc&apikey=${apiKey}`
 
 - If even this endpoint doesn't work properly, use this another endpoint: `http://api.etherscan.io/api?module=account&action=txlist&address={account}&sort=asc`
+
+- Before deployment, make sure the `Connect Wallet` button is working properly.
