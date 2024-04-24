@@ -17,7 +17,13 @@ The task is to create a simple web app using React, which can connect to MetaMas
 5. Create a Data Visualization with Pagination
    - For data visualization, use `React Table` library
    - For pagination, you use `react-paginate` library
+   - The table contains 4 columns : transactionAddres, from, to, timeStamp
+   - One page should contain only 8 transactions
 6. Mock connection to MetaMask for testing if the app is working
+7. Deploy to GitHub:
+   - ask the user for an https link for the repo to push the code to
+   - while making any changes to the code, create a separate branch for the changes and generate PR
+   - follow the best branch naming practices for the github branches
 
 ## Specification
 
@@ -27,12 +33,10 @@ The task is to create a simple web app using React, which can connect to MetaMas
 
 - Don't try to login to metamask as you can't use the metamask extension.
 - Don't waste time on fixing `npm install` warnings and vulnerabilities, if they don't break the app.
+- Don't `push` the code to a repo before confirming from the user.
 
 ## Advice and Pointers
 
 - If the etherscan api doesn't work properly, use this API endpoint: - Etherscan API: `https://api.etherscan.io/api?module=account&action=txlist&address=${account}&startblock=0&endblock=99999999&sort=asc&apikey=${apiKey}`
 
 - If even this endpoint doesn't work properly, use this another endpoint: `http://api.etherscan.io/api?module=account&action=txlist&address={account}&sort=asc`
-
-// Data visualization format might need to be provided.
-`
