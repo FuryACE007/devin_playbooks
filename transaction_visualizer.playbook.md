@@ -14,7 +14,7 @@ The task is to create a simple web app using React, which can connect to MetaMas
    - Mock connection to MetaMask for testing if the app can connect to metamask and test if the app is working.
 4. Fetch Transactions Using Etherscan API
    - Ask the user for the Etherscan API key ( store it safely )
-   - Using the etherscan api, fetch all the transactions on `Sepolia Testnet` from the wallet address using axios ( `GET` request )
+   - Using the etherscan api and Alchemy Sepolia API, fetch all the transactions on `Sepolia Testnet` from the wallet address using axios ( `GET` request )
 5. Create a Data Visualization with Pagination
    - For data visualization, use `React Table` library
    - For pagination, you use `react-paginate` library
