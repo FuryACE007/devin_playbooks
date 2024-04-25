@@ -14,7 +14,7 @@ The task is to create a simple web app using React, which can connect to MetaMas
    - Mock connection to MetaMask for testing if the app can connect to metamask and test if the app is working.
 4. Fetch Transactions Using Etherscan API
    - Ask the user for the Etherscan API key ( store it safely )
-   - Using the etherscan api and Alchemy Sepolia API, fetch all the transactions on `Sepolia Testnet` from the wallet address using axios ( `GET` request )
+   - Using the etherscan sepolia api, fetch all the transactions on `Sepolia Testnet` from the wallet address using axios ( `GET` request )
 5. Create a Data Visualization with Pagination
    - For data visualization, use `React Table` library
    - For pagination, you use `react-paginate` library
@@ -35,13 +35,14 @@ The task is to create a simple web app using React, which can connect to MetaMas
 - Don't try to login to metamask as you can't use the metamask extension.
 - Don't waste time on fixing `npm install` warnings and vulnerabilities, if they don't break the app.
 - Don't `push` the code to a repo before confirming from the user.
+- Don't use the mock data while deployment.
 
 ## Advice and Pointers
+
+- The API endpoint of Etherscan sepolia is this: https://api-sepolia.etherscan.io/api
 
 - If the etherscan api doesn't work properly, use this API endpoint: - Etherscan API: `https://api.etherscan.io/api?module=account&action=txlist&address=${account}&startblock=0&endblock=99999999&sort=asc&apikey=${apiKey}`
 
 - If even this endpoint doesn't work properly, use this another endpoint: `http://api.etherscan.io/api?module=account&action=txlist&address={account}&sort=asc`
 
-- Alchemy Sepolia APi url: https://eth-sepolia.g.alchemy.com/v2/
-
-- Before deployment, make sure the `Connect Wallet` button is working properly.
+- Before deployment, make sure the `Connect Wallet` button is working properly, and remove the mocking code and mock data before deployment.
