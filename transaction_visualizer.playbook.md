@@ -42,4 +42,6 @@ The task is to create a simple web app using React, which can connect to MetaMas
 
 - If even this endpoint doesn't work properly, use this another endpoint: `http://api.etherscan.io/api?module=account&action=txlist&address={account}&sort=asc`
 
+- Alchemy Sepolia APi url: https://eth-sepolia.g.alchemy.com/v2/
+
 - Before deployment, make sure the `Connect Wallet` button is working properly.
