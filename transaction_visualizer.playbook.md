@@ -8,7 +8,8 @@ The task is to create a simple web app using React, which can connect to MetaMas
 
 1. Create a React app ( using `create-react-app` )
 2. Install `Ethers.js`, `axios`, `react-paginate`
-3. Create a Button to Connect to MetaMask
+3. Build a beautiful UI and create a Button to Connect to MetaMask
+   - Use the color scheme of Netflix or Hotstar and create properly visible components.
    - In App.js, create a button that will trigger the MetaMask connection when clicked.
    - set up a state to hold the connected account's address.
    - Mock connection to MetaMask for testing if the app can connect to metamask and test if the app is working.
@@ -18,11 +19,12 @@ The task is to create a simple web app using React, which can connect to MetaMas
 5. Create a Data Visualization with Pagination
    - For data visualization, use `React Table` library
    - For pagination, you use `react-paginate` library
-   - The table contains 4 columns : transactionAddres, from, to, timeStamp
+   - The table must contain 4 columns : transactionAddress, from, to, timeStamp
    - One page should contain only 8 transactions
-6. Push to GitHub:
+6. Deployment and Push to GitHub:
+   - Before deployment, remove all the mock data and mocking logic, so that the app shows real transactions for the connected wallets.
    - After deploying the application and testing it, prepare for pushing the code to GitHub
-   - ask the user for an https link for the repo to push the code to
+   - ask the user for an `https` link for the repo to push the code to
    - while making any changes to the code, create a separate branch for the changes and generate PR, and make sure if the topic for change is same, don't create a separate `pr` for it
    - follow the best branch naming practices for the github branches
 
