@@ -9,7 +9,7 @@ Create a Next JS app which can create, mint and transfer fungible tokens to any 
 1. Instantiate the project: ( App name is TokenX )
 
    - Install `Next JS`, `@metaplex-foundation/mpl-token-metadata`, `@metaplex-foundation/mpl-toolbox`, `@metaplex-foundation/umi`, `@metaplex-foundation/umi-bundle-defaults`, `@metaplex-foundation/umi-uploader-irys`, `@solana/spl-token`, `@solana/wallet-adapter-react`, `react-toastify`
-   - Install and setup `Acertinity UI`: https://ui.aceternity.com/
+   - Install and setup `Acertinity UI`( docs: https://ui.aceternity.com/ )
 
 2. Design the frontend of the web app:
 
