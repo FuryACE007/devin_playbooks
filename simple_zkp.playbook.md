@@ -67,6 +67,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
       Select Create an empty `hardhat.config.js`
     - Install `hardhat toolbox`: `npm install --save-dev @nomicfoundation/hardhat-toolbox`
     - Append `require("@nomicfoundation/hardhat-toolbox");` to the top of `hardhat.config.js`
+    - Ask the user for `SEPOLIA_PRIVATE_KEY` and `INFURA_API_KEY` and store them in `.env` file
     - Configure `hardhat.config.js` to use `Sepolia ETH` testnet for deployment:
 
     ```require("@nomicfoundation/hardhat-toolbox");
