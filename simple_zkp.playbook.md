@@ -129,3 +129,4 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
 
 - Keep `SEPOLIA_PRIVATE_KEY` and `INFURA_API_KEY` in `.env` file and handle them carefully.
 - Push the code to a new repo named `zk-proof-sample` in the `Devin-Applications` organisation.
+- Use the commands excatly as they are provided in the procedure.
