@@ -55,7 +55,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
     - generate a solidity verifier smart contract: `snarkjs zkey export solidityverifier multiplier.zkey verifier.sol`
     - verify that the above command genrates a file named `verifier.sol`
     - generate solidty calldata: `snarkjs zkey export soliditycalldata public.json proof.json`
-    - copy the result of the above command into a file named `calldata.txt`
+    - copy the result of the above command into a file named `calldata.txt`: `snarkjs generatecall >> calldata.txt`
 
 6.  Creat a simple hardhat project
 
@@ -90,7 +90,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
      };
     ```
 
-    - put the Verifier.sol contract in the `contracts` folder.
+    - Copy the `verifier.sol` contract from the project root ( i.e. from `./zk_tuts` ) and paste in the `contracts` folder in the hardhat directory.
 
 7.  Compile and deploy the contract - compile the contract `npx hardhat compile` - create deployment script:
     `mkdir scripts && echo > scripts/deploy.js` - put this code inside `deploy.js`:
@@ -104,7 +104,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
             deployer.address
             );
 
-            const Verifier = await ethers.getContractFactory("Verifier");
+            const Verifier = await ethers.getContractFactory("PlonkVerifier");
             const contract = await Verifier.deploy();
 
             console.log("Contract deployed at:", contract.address);
@@ -131,3 +131,4 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
 - Keep `SEPOLIA_PRIVATE_KEY` and `INFURA_API_KEY` in `.env` file and handle them carefully.
 - Push the code to a new repo named `zk-proof-sample` in the `Devin-Applications` organisation.
 - Use the commands excatly as they are provided in the procedure.
+- Always store credentials inside the environment variables
