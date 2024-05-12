@@ -6,6 +6,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
 
 - `SEPOLIA_PRIVATE_KEY`
 - `INFURA_API_KEY`
+- `GITHUB_TOKEN`
 
 ## Specification
 
@@ -103,7 +104,7 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
             "Deploying contracts with the account:",
             deployer.address
             );
-
+            const calldata = {contents of calldata.txt} #replace with the contents of calldata.txt, and pass the proof and public signal
             const Verifier = await ethers.getContractFactory("PlonkVerifier");
             const contract = await Verifier.deploy();
 
@@ -123,12 +124,13 @@ The Playbook guides you through how to create a simple zero knowledge proof and 
         });
         ````
 
-    - pass the content of `calldata.txt` file to the `verifyProof()` function call in the `deploy.js` script.
+    - pass the content of `calldata.txt` file to the `verifyProof()` function call in a separate `verify.js` script.
+    - verify the proof using `verify.js` script.
     - deploy the contract: `npx hardhat run scripts/deploy.js --network sepolia`
 
 ## Advice and Tips
 
-- Keep `SEPOLIA_PRIVATE_KEY` and `INFURA_API_KEY` in `.env` file and handle them carefully.
-- Push the code to a new repo named `zk-proof-sample` in the `Devin-Applications` organisation.
+- Keep `SEPOLIA_PRIVATE_KEY`, `GITHUB_TOKEN` and `INFURA_API_KEY` in `.env` file and handle them carefully.
+- Push the code to a new repo named `zk-proof-sample` in the `Devin-Applications` organisation, creating a separate branch for this code.
 - Use the commands excatly as they are provided in the procedure.
 - Always store credentials inside the environment variables
